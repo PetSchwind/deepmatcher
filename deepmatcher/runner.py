@@ -358,7 +358,7 @@ class Runner(object):
                 print('Saving epoch model...')
                 save_path = '{prefix}_ep{epoch}.pth'.format(
                     prefix=save_every_prefix, epoch=epoch + 1)
-                model.save_state(save_path)
+                model.save_state(save_path, strict=False)
                 print('Done.')
             print('---------------------\n')
 
