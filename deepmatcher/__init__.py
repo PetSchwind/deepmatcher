@@ -7,11 +7,11 @@ import logging
 import warnings
 import sys
 
-from .data import process as data_process
-from .models import modules
-from .models.core import (MatchingModel, AttrSummarizer, WordContextualizer,
+from deepmatcher.deepmatcher.data import process as data_process
+from deepmatcher.deepmatcher.models import modules
+from deepmatcher.deepmatcher.models.core import (MatchingModel, AttrSummarizer, WordContextualizer,
                           WordComparator, WordAggregator, Classifier)
-from .models import (attr_summarizers, word_aggregators, word_comparators,
+from deepmatcher.deepmatcher.models import (attr_summarizers, word_aggregators, word_comparators,
                      word_contextualizers)
 
 # Register these as submodules of deepmatcher. This helps organize files better while
