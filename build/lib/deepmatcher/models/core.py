@@ -480,7 +480,7 @@ class MatchingModel(nn.Module):
 
             self.initialize(train_info, self.state_meta.init_batch)
 
-        self.load_state_dict(state['model'])
+        self.load_state_dict(state['model'], strict=False)
 
 
 class AttrSummarizer(dm.modules.LazyModule):
